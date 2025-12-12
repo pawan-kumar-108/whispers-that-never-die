@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>🌸Patchwork Quilt</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div id="patch-counter">🧵 0 patches sewn</div>
+  <div id="quilt-viewport">
+  <div id="quilt-container"></div>
+  </div>
+<div id="ui-overlay">
+  <div id="modal">
+    <input type="color" id="color-picker">
+    <input type="text" id="user-message" placeholder="How are you feeling today?">
+    <button id="submit-button">Sew it!</button>
+  </div>
+  <div id="emotion-suggestions">
+    <button class="emotion-tag">Happy</button>
+    <button class="emotion-tag">Excited</button>
+    <button class="emotion-tag">Melancholy</button>
+    <button class="emotion-tag">Anxious</button>
+    <button class="emotion-tag">Loved</button>
+  </div>
+  <div id="affirmation"></div>
+</div>
+<div id="spotlight">
+  <div class="spotlight-label">✨ Patch Spotlight</div>
+  <div class="spotlight-content" style="background-color: #87CEFA;">
+    <p>"A little overwhelmed, but hanging in."</p>
+    <span class="spotlight-meta">Anxious · Jun 23, 12:45 PM</span>
+  </div>
+</div>
+<audio id="bg-music" loop>
+  <source src="{{ url_for('static', filename='ambient.mp3') }}" type="audio/mp3">
+</audio>
+<button id="music-toggle">🔇</button>
+  <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+  <script src="https://unpkg.com/@panzoom/panzoom@9.4.0/dist/panzoom.min.js"></script>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
