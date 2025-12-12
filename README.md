@@ -126,8 +126,3 @@ Curated AI-generated lines in a soft-scrollable “Affirmation Garden”.
 MIT License. Free to use and modify.
 
 ---
-
-## 🙋‍♀️ Author
-Built by Antara Srivastava
-📧 antarakyw05@gmail.com
-🌐 github.com/antarades
